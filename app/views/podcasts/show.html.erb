@@ -1,0 +1,98 @@
+<div id="podcast_show">
+		<div id="show_banner">
+		<div class="wrapper_skinny">
+			<h1><%= @podcast.title %></h1>
+			<p class="description"><%= @podcast.description %></p>
+
+			<% unless @podcast.itunes.blank? %>
+			<a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+			<% end %>
+
+
+			<% unless @podcast.stitcher.blank? %>
+			<a href="<%= @podcast.stitcher %>" class="subscribe_link">Stitcher</a>
+			<% end %>
+
+			<% unless @podcast.podbay.blank? %>
+			<a href="<%= @podcast.podbay %>" class="subscribe_link">Podbay</a>
+			<% end %>
+
+		</div>
+		</div>
+		<div id="breadcrumb">
+		<%= link_to podcasts_path do %>
+				All Podcasts
+				<span>/</span>
+				The Rocketchip Podcast
+			<% end %>
+		</div>
+
+			<div id="episodes">
+				<div class="wrapper_skinny">
+					<ul class="cf">
+						<li class="cf">
+							<div class="episode_thumbnail">
+								<a href="episodes.html">
+									<img src="images/me.jpg" alt="me">
+								</a>
+							</div>
+							<div class="episode_overview">
+								<h2><a href="episodes.html">
+									How to Pull off 12 (Well Executed) Startups in 12 Months
+								</a></h2>
+								<p class="description">Thundercats kinfolk drinking vinegar fanny pack cred pinterest. Yuccie brooklyn portland meditation yr scenester tote bag ugh +1 occupy whatever gastropub woke. Bushwick vaporware venmo bespoke... </p>
+							</div>
+						</li>
+
+						<li class="cf">
+							<div class="episode_thumbnail">
+								<a href="episodes.html">
+									<img src="images/simon.jpg" alt="me">
+								</a>
+							</div>
+							<div class="episode_overview">
+								<h2><a href="episodes.html">
+									How to Pull off 12 (Well Executed) Startups in 12 Months
+								</a></h2>
+								<p class="description">Thundercats kinfolk drinking vinegar fanny pack cred pinterest. Yuccie brooklyn portland meditation yr scenester tote bag ugh +1 occupy whatever gastropub woke. Bushwick vaporware venmo bespoke... </p>
+							</div>
+						</li>
+
+						<li class="cf">
+							<div class="episode_thumbnail">
+								<a href="episodes.html">
+									<img src="images/steve-jobs.jpg" alt="me">
+								</a>
+							</div>
+							<div class="episode_overview">
+								<h2><a href="episodes.html">
+									How to Pull off 12 (Well Executed) Startups in 12 Months
+								</a></h2>
+								<p class="description">Thundercats kinfolk drinking vinegar fanny pack cred pinterest. Yuccie brooklyn portland meditation yr scenester tote bag ugh +1 occupy whatever gastropub woke. Bushwick vaporware venmo bespoke... </p>
+							</div>
+						</li>
+
+						<li class="cf">
+							<div class="episode_thumbnail">
+								<a href="episodes.html">
+									<img src="images/sundar.jpg" alt="me">
+								</a>
+							</div>
+							<div class="episode_overview">
+								<h2><a href="episodes.html">
+									How to Pull off 12 (Well Executed) Startups in 12 Months
+								</a></h2>
+								<p class="description">Thundercats kinfolk drinking vinegar fanny pack cred pinterest. Yuccie brooklyn portland meditation yr scenester tote bag ugh +1 occupy whatever gastropub woke. Bushwick vaporware venmo bespoke... </p>
+							</div>
+						</li>
+					</ul>
+			</div>
+	</div>
+</div>
+
+<div class="pagination">
+	<span class="previous_page disabled">Previous</span>
+<em class="current">1</em>
+<a href="#">2</a>
+<a href="#" class="next_page">Next</a>
+</div>
