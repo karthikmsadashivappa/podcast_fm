@@ -18,7 +18,7 @@ class EpisodesController < ApplicationController
 	end
 
 	def show
-		@episodes = Episode.where(podcast_id: @podcast).order("created_at DESC").reject { |e| e.id == @episode.id }
+		@episodes = Episode.where(podcast_id: @podcast).order("created_at DESC").limit(6).reject { |e| e.id == @episode.id }
 	end
 
 	def edit
@@ -40,7 +40,7 @@ class EpisodesController < ApplicationController
 	private 
 
 	def episode_params
-		params.require(:episode).permit(:title, :description, :episode_thumbnail)
+		params.require(:episode).permit(:title, :description, :episode_thumbnail, :mp3)
 	end
 
 	def find_podcast

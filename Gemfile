@@ -16,6 +16,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 3.0'
+gem 'will_paginate', '~> 3.1'
 
 
 group :development, :test do
