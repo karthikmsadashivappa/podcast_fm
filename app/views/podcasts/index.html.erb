@@ -8,7 +8,7 @@
 		<%= link_to podcast do %>
 
 		<li>
-				<img src="images/RM.jpg" alt="Rough Draft">
+				<%= image_tag podcast.thumbnail.url(:medium) %>
 				<div class="podcast_overview">
 					<h2><%= podcast.title %></h2>
 					<p class="episode_count">1 Episode</p>
@@ -17,75 +17,7 @@
 		<% end %>
 		<% end %>
 
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/unthinkable.jpg" alt="Unthinkable">
-				<div class="podcast_overview">
-					<h2>Unthinkable</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/sank.jpg" alt="Animation">
-				<div class="podcast_overview">
-					<h2>Animation</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/technicolor.jpg" alt="Techni Color">
-				<div class="podcast_overview">
-					<h2>Techni-Color</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/wtf.jpg" alt="WTF">
-				<div class="podcast_overview">
-					<h2>WTF</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/internet.jpg" alt="Internet Marketing">
-				<div class="podcast_overview">
-					<h2>Internet Marketing</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/tech.jpg" alt="Finety Rafted">
-				<div class="podcast_overview">
-					<h2>Finety Rafted</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
-
-			<a href="podcast_show.html">
-				<li>
-				<img src="images/es.jpg" alt="The Essential Chruch">
-				<div class="podcast_overview">
-					<h2>The Essential Chruch</h2>
-					<p class="episode_count">1 Episode</p>
-				</div>	
-				</li>
-			</a>
+			
 		</ul>
 	</div>
 </div>
